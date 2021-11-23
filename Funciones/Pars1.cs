@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Funciones
 {
-    public partial class Form1 : Form
+    public partial class Pars1 : Form
     {
-        public Form1()
+        public Pars1()
         {
             InitializeComponent();
         }

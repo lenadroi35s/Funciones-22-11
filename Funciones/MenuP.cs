@@ -97,7 +97,7 @@ namespace Funciones
 
         private void contarDeLetrasAToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form1 uno = new Form1();
+            Pars1 uno = new Pars1();
             uno.MdiParent = this;
             uno.Show();
         }

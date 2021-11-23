@@ -32,15 +32,16 @@ namespace Funciones
             this.label1 = new System.Windows.Forms.Label();
             this.txtDecimal = new System.Windows.Forms.TextBox();
             this.groupResul = new System.Windows.Forms.GroupBox();
-            this.btbAceptar = new System.Windows.Forms.Button();
-            this.ckB1 = new System.Windows.Forms.CheckBox();
-            this.ckB2 = new System.Windows.Forms.CheckBox();
-            this.ckB3 = new System.Windows.Forms.CheckBox();
-            this.ckB4 = new System.Windows.Forms.CheckBox();
-            this.ckB5 = new System.Windows.Forms.CheckBox();
-            this.ckB6 = new System.Windows.Forms.CheckBox();
-            this.ckB7 = new System.Windows.Forms.CheckBox();
             this.ckB8 = new System.Windows.Forms.CheckBox();
+            this.ckB7 = new System.Windows.Forms.CheckBox();
+            this.ckB6 = new System.Windows.Forms.CheckBox();
+            this.ckB5 = new System.Windows.Forms.CheckBox();
+            this.ckB4 = new System.Windows.Forms.CheckBox();
+            this.ckB3 = new System.Windows.Forms.CheckBox();
+            this.ckB2 = new System.Windows.Forms.CheckBox();
+            this.ckB1 = new System.Windows.Forms.CheckBox();
+            this.btbAceptar = new System.Windows.Forms.Button();
+            this.btnBaD = new System.Windows.Forms.Button();
             this.groupResul.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,10 +75,91 @@ namespace Funciones
             this.groupResul.Controls.Add(this.ckB1);
             this.groupResul.Location = new System.Drawing.Point(34, 118);
             this.groupResul.Name = "groupResul";
-            this.groupResul.Size = new System.Drawing.Size(755, 252);
+            this.groupResul.Size = new System.Drawing.Size(730, 89);
             this.groupResul.TabIndex = 2;
             this.groupResul.TabStop = false;
             this.groupResul.Text = "Equivalente en binario";
+            this.groupResul.Enter += new System.EventHandler(this.groupResul_Enter);
+            // 
+            // ckB8
+            // 
+            this.ckB8.AutoSize = true;
+            this.ckB8.Location = new System.Drawing.Point(67, 59);
+            this.ckB8.Name = "ckB8";
+            this.ckB8.Size = new System.Drawing.Size(15, 14);
+            this.ckB8.TabIndex = 7;
+            this.ckB8.UseVisualStyleBackColor = true;
+            this.ckB8.CheckedChanged += new System.EventHandler(this.ckB1_CheckedChanged);
+            // 
+            // ckB7
+            // 
+            this.ckB7.AutoSize = true;
+            this.ckB7.Location = new System.Drawing.Point(153, 59);
+            this.ckB7.Name = "ckB7";
+            this.ckB7.Size = new System.Drawing.Size(15, 14);
+            this.ckB7.TabIndex = 6;
+            this.ckB7.UseVisualStyleBackColor = true;
+            this.ckB7.CheckedChanged += new System.EventHandler(this.ckB1_CheckedChanged);
+            // 
+            // ckB6
+            // 
+            this.ckB6.AutoSize = true;
+            this.ckB6.Location = new System.Drawing.Point(239, 59);
+            this.ckB6.Name = "ckB6";
+            this.ckB6.Size = new System.Drawing.Size(15, 14);
+            this.ckB6.TabIndex = 5;
+            this.ckB6.UseVisualStyleBackColor = true;
+            this.ckB6.CheckedChanged += new System.EventHandler(this.ckB1_CheckedChanged);
+            // 
+            // ckB5
+            // 
+            this.ckB5.AutoSize = true;
+            this.ckB5.Location = new System.Drawing.Point(325, 59);
+            this.ckB5.Name = "ckB5";
+            this.ckB5.Size = new System.Drawing.Size(15, 14);
+            this.ckB5.TabIndex = 4;
+            this.ckB5.UseVisualStyleBackColor = true;
+            this.ckB5.CheckedChanged += new System.EventHandler(this.ckB1_CheckedChanged);
+            // 
+            // ckB4
+            // 
+            this.ckB4.AutoSize = true;
+            this.ckB4.Location = new System.Drawing.Point(411, 59);
+            this.ckB4.Name = "ckB4";
+            this.ckB4.Size = new System.Drawing.Size(15, 14);
+            this.ckB4.TabIndex = 3;
+            this.ckB4.UseVisualStyleBackColor = true;
+            this.ckB4.CheckedChanged += new System.EventHandler(this.ckB1_CheckedChanged);
+            // 
+            // ckB3
+            // 
+            this.ckB3.AutoSize = true;
+            this.ckB3.Location = new System.Drawing.Point(497, 59);
+            this.ckB3.Name = "ckB3";
+            this.ckB3.Size = new System.Drawing.Size(15, 14);
+            this.ckB3.TabIndex = 2;
+            this.ckB3.UseVisualStyleBackColor = true;
+            this.ckB3.CheckedChanged += new System.EventHandler(this.ckB1_CheckedChanged);
+            // 
+            // ckB2
+            // 
+            this.ckB2.AutoSize = true;
+            this.ckB2.Location = new System.Drawing.Point(583, 59);
+            this.ckB2.Name = "ckB2";
+            this.ckB2.Size = new System.Drawing.Size(15, 14);
+            this.ckB2.TabIndex = 1;
+            this.ckB2.UseVisualStyleBackColor = true;
+            this.ckB2.CheckedChanged += new System.EventHandler(this.ckB1_CheckedChanged);
+            // 
+            // ckB1
+            // 
+            this.ckB1.AutoSize = true;
+            this.ckB1.Location = new System.Drawing.Point(669, 59);
+            this.ckB1.Name = "ckB1";
+            this.ckB1.Size = new System.Drawing.Size(15, 14);
+            this.ckB1.TabIndex = 0;
+            this.ckB1.UseVisualStyleBackColor = true;
+            this.ckB1.CheckedChanged += new System.EventHandler(this.ckB1_CheckedChanged);
             // 
             // btbAceptar
             // 
@@ -89,84 +171,22 @@ namespace Funciones
             this.btbAceptar.UseVisualStyleBackColor = true;
             this.btbAceptar.Click += new System.EventHandler(this.btbAceptar_Click);
             // 
-            // ckB1
+            // btnBaD
             // 
-            this.ckB1.AutoSize = true;
-            this.ckB1.Location = new System.Drawing.Point(669, 59);
-            this.ckB1.Name = "ckB1";
-            this.ckB1.Size = new System.Drawing.Size(15, 14);
-            this.ckB1.TabIndex = 0;
-            this.ckB1.UseVisualStyleBackColor = true;
-            // 
-            // ckB2
-            // 
-            this.ckB2.AutoSize = true;
-            this.ckB2.Location = new System.Drawing.Point(583, 59);
-            this.ckB2.Name = "ckB2";
-            this.ckB2.Size = new System.Drawing.Size(15, 14);
-            this.ckB2.TabIndex = 1;
-            this.ckB2.UseVisualStyleBackColor = true;
-            // 
-            // ckB3
-            // 
-            this.ckB3.AutoSize = true;
-            this.ckB3.Location = new System.Drawing.Point(497, 59);
-            this.ckB3.Name = "ckB3";
-            this.ckB3.Size = new System.Drawing.Size(15, 14);
-            this.ckB3.TabIndex = 2;
-            this.ckB3.UseVisualStyleBackColor = true;
-            // 
-            // ckB4
-            // 
-            this.ckB4.AutoSize = true;
-            this.ckB4.Location = new System.Drawing.Point(411, 59);
-            this.ckB4.Name = "ckB4";
-            this.ckB4.Size = new System.Drawing.Size(15, 14);
-            this.ckB4.TabIndex = 3;
-            this.ckB4.UseVisualStyleBackColor = true;
-            this.ckB4.CheckedChanged += new System.EventHandler(this.ckB4_CheckedChanged);
-            // 
-            // ckB5
-            // 
-            this.ckB5.AutoSize = true;
-            this.ckB5.Location = new System.Drawing.Point(325, 59);
-            this.ckB5.Name = "ckB5";
-            this.ckB5.Size = new System.Drawing.Size(15, 14);
-            this.ckB5.TabIndex = 4;
-            this.ckB5.UseVisualStyleBackColor = true;
-            // 
-            // ckB6
-            // 
-            this.ckB6.AutoSize = true;
-            this.ckB6.Location = new System.Drawing.Point(239, 59);
-            this.ckB6.Name = "ckB6";
-            this.ckB6.Size = new System.Drawing.Size(15, 14);
-            this.ckB6.TabIndex = 5;
-            this.ckB6.UseVisualStyleBackColor = true;
-            // 
-            // ckB7
-            // 
-            this.ckB7.AutoSize = true;
-            this.ckB7.Location = new System.Drawing.Point(153, 59);
-            this.ckB7.Name = "ckB7";
-            this.ckB7.Size = new System.Drawing.Size(15, 14);
-            this.ckB7.TabIndex = 6;
-            this.ckB7.UseVisualStyleBackColor = true;
-            // 
-            // ckB8
-            // 
-            this.ckB8.AutoSize = true;
-            this.ckB8.Location = new System.Drawing.Point(67, 59);
-            this.ckB8.Name = "ckB8";
-            this.ckB8.Size = new System.Drawing.Size(15, 14);
-            this.ckB8.TabIndex = 7;
-            this.ckB8.UseVisualStyleBackColor = true;
+            this.btnBaD.Location = new System.Drawing.Point(578, 259);
+            this.btnBaD.Name = "btnBaD";
+            this.btnBaD.Size = new System.Drawing.Size(158, 52);
+            this.btnBaD.TabIndex = 4;
+            this.btnBaD.Text = "Binario a entero";
+            this.btnBaD.UseVisualStyleBackColor = true;
+            this.btnBaD.Click += new System.EventHandler(this.btnBaD_Click);
             // 
             // Deciamal_Binario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnBaD);
             this.Controls.Add(this.btbAceptar);
             this.Controls.Add(this.groupResul);
             this.Controls.Add(this.txtDecimal);
@@ -195,5 +215,6 @@ namespace Funciones
         private System.Windows.Forms.CheckBox ckB2;
         private System.Windows.Forms.CheckBox ckB1;
         private System.Windows.Forms.Button btbAceptar;
+        private System.Windows.Forms.Button btnBaD;
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace Funciones
 {
-    partial class Form1
+    partial class Pars1
     {
         /// <summary>
         /// Variable del diseñador necesaria.
